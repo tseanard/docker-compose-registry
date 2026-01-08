@@ -1,3 +1,8 @@
+# instance specific secrets
+openssl.cnf
+*.crt
+*.key
+
 # repository data files
 /data/*
 !/data/.gitkeep

@@ -11,14 +11,11 @@ http:
   addr: :5000
   headers:
     X-Content-Type-Options: [nosniff]
+  tls:
+    certificate: /certs/domain.crt
+    key: /certs/domain.key
 health:
   storagedriver:
     enabled: true
     interval: 10s
     threshold: 3
-proxy:
-  remoteurl: https://registry-1.docker.io
-  # username: [username]
-  # password: [password]
-#auth:
-#  false
